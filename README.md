@@ -15,3 +15,12 @@ DATABASE_PASSWORD = 'yourpassword'
 
 ## Development
 * In the root folder, use `python manage.py runserver` to get the server running on localhost:8000 . If you need it to run on another port, simply run e.g. `python manage.py runserver 1234` to get it to run on localhost:1234 .
+
+## Database Migrations
+* Create database migrations for new/modified models using `python manage.py makemigrations appname`.
+* If you want, use `python manage.py check` to see if the current pending migrations will cause a problem.
+* Apply pending migrations with `python manage.py migrate` to alter the database.
+
+## Site Administrators
+* Create an admin account using `python manage.py createsuperuser` and follow the prompts given in the terminal.
+* Access the sites admin capabilities by navigating to `localhost:8000/admin/` or similar.
